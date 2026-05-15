@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Daniel Chen portrait illustration</title>
+  <desc id="desc">Professional testimonial avatar illustration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="24" x2="216" y1="24" y2="216" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="56" fill="url(#bg)"/>
+  <circle cx="120" cy="96" r="43" fill="#c08457"/>
+  <path fill="#171717" d="M78 83c3-34 24-54 58-49 27 4 43 21 42 56-31-15-67-16-100-7Z"/>
+  <path fill="#0f172a" d="M46 208c9-47 37-74 74-74s65 27 74 74H46Z"/>
+  <path fill="#6366f1" d="M82 208c4-29 18-45 38-45s34 16 38 45H82Z"/>
+  <rect x="88" y="91" width="30" height="13" rx="6" fill="none" stroke="#111827" stroke-width="5"/>
+  <rect x="122" y="91" width="30" height="13" rx="6" fill="none" stroke="#111827" stroke-width="5"/>
+  <path d="M117 98h6" stroke="#111827" stroke-width="5" stroke-linecap="round"/>
+  <path d="M106 119c10 8 20 8 30 0" stroke="#5b2d1c" stroke-width="5" stroke-linecap="round" fill="none"/>
+</svg>

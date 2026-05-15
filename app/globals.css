@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 18% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 18% 12%;
+    --primary: 173 72% 34%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 38 45% 94%;
+    --secondary-foreground: 220 18% 12%;
+    --muted: 210 18% 95%;
+    --muted-foreground: 220 9% 42%;
+    --accent: 35 92% 90%;
+    --accent-foreground: 24 72% 26%;
+    --border: 220 14% 90%;
+    --input: 220 14% 88%;
+    --ring: 173 72% 34%;
+  }
+
+  .dark {
+    --background: 220 18% 7%;
+    --foreground: 38 28% 94%;
+    --card: 220 16% 10%;
+    --card-foreground: 38 28% 94%;
+    --primary: 173 72% 45%;
+    --primary-foreground: 220 18% 7%;
+    --secondary: 220 12% 16%;
+    --secondary-foreground: 38 28% 94%;
+    --muted: 220 12% 15%;
+    --muted-foreground: 38 10% 68%;
+    --accent: 35 82% 50%;
+    --accent-foreground: 220 18% 7%;
+    --border: 220 10% 22%;
+    --input: 220 10% 24%;
+    --ring: 173 72% 45%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image:
+      linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(247, 248, 245, 1)),
+      linear-gradient(rgba(17, 24, 39, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(17, 24, 39, 0.04) 1px, transparent 1px);
+    background-size: auto, 42px 42px, 42px 42px;
+  }
+
+  .dark body {
+    background-image:
+      linear-gradient(180deg, rgba(16, 18, 22, 1), rgba(9, 10, 13, 1)),
+      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: auto, 42px 42px, 42px 42px;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .portfolio-grid {
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+    background-size: 52px 52px;
+    mask-image: linear-gradient(to bottom, black, transparent 88%);
+  }
+
+  .float-slow {
+    animation: float-slow 7s ease-in-out infinite;
+  }
+
+  .float-slower {
+    animation: float-slow 9s ease-in-out infinite reverse;
+  }
+
+  .shine-sweep {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shine-sweep::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    translate: -120% 0;
+    background: linear-gradient(105deg, transparent 30%, hsl(var(--primary) / 0.14), transparent 70%);
+    transition: translate 0.7s ease;
+  }
+
+  .group:hover .shine-sweep::after,
+  .shine-sweep:hover::after {
+    translate: 120% 0;
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
