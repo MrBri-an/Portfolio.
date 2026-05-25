@@ -195,7 +195,7 @@ export const featuredProjects: FeaturedProject[] = [
       "Featured listings",
       "Mobile-first experience",
     ],
-    tools: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "Auth", "Maps"],
+    tools: ["Next.js", "TypeScript", "Tailwind CSS", "Data modeling", "Direct messaging", "Maps"],
     impact:
       "Creates a more transparent search journey and a clearer business model around verified inventory, featured listings, and direct owner communication.",
     mockup: "nestfind",
@@ -287,7 +287,7 @@ export const featuredProjects: FeaturedProject[] = [
       "Founders often need a believable first product quickly, but early mobile builds can become slow, inconsistent, or hard to iterate.",
     features: [
       "Onboarding flow",
-      "Authentication screens",
+      "User onboarding screens",
       "User dashboard",
       "Reusable UI components",
       "App store-ready design direction",
@@ -305,7 +305,7 @@ export const featuredProjects: FeaturedProject[] = [
       overview:
         "The Mobile App MVP Builder is a reusable approach for turning early product ideas into mobile experiences that feel real enough to test, pitch, and iterate.",
       goal:
-        "Create a repeatable product foundation with onboarding, authentication, dashboard states, and reusable components.",
+        "Create a repeatable product foundation with onboarding, user access states, dashboard states, and reusable components.",
       role:
         "Mobile product architecture, UX flows, component planning, and MVP delivery strategy.",
       process: [
@@ -391,7 +391,7 @@ export const featuredProjects: FeaturedProject[] = [
       "Responsive dashboard layout",
       "Business-focused insights",
     ],
-    tools: ["Next.js", "TypeScript", "Recharts", "APIs", "Tailwind CSS", "Data UX"],
+    tools: ["Next.js", "TypeScript", "Chart UI", "APIs", "Tailwind CSS", "Data UX"],
     impact:
       "Turns scattered metrics into a clear operating picture so leaders can see trends, risks, and next actions without digging through raw data.",
     mockup: "analytics",
@@ -431,7 +431,7 @@ export const additionalProjects = [
     title: "Real Estate Listing Platform",
     category: "PropTech",
     description: "Searchable listing flows with owner profiles, saved properties, and location-aware discovery.",
-    tags: ["Next.js", "Prisma", "Maps"],
+    tags: ["Next.js", "Data UX", "Maps"],
     mockup: "nestfind",
     visual: {
       label: "Listing intelligence",
@@ -555,11 +555,11 @@ export const experience = [
   {
     role: "Mobile App Developer",
     description:
-      "I design and build mobile-first MVPs with clean onboarding, authentication, dashboards, and reusable UI patterns.",
+      "I design and build mobile-first MVPs with clean onboarding, user flows, dashboards, and reusable UI patterns.",
     responsibilities: [
       "Mobile UX planning",
       "React Native screens",
-      "Authentication flows",
+      "User access flows",
       "MVP iteration support",
     ],
     tools: ["React Native", "Expo", "Firebase", "Mobile UI"],
@@ -592,8 +592,8 @@ export const skills = [
     items: ["React Native", "Mobile UI/UX", "App MVPs", "Cross-platform development"],
   },
   {
-    category: "Backend / Database",
-    items: ["Supabase", "Firebase", "REST APIs", "Authentication", "Database design"],
+    category: "Backend Awareness",
+    items: ["Supabase", "Firebase", "REST APIs", "API integration", "Data modeling"],
   },
   {
     category: "AI / Automation",

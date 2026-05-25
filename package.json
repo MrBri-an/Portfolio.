@@ -1,5 +1,5 @@
 {
-  "name": "nestfind",
+  "name": "brian-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,36 +7,19 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx",
-    "typecheck": "tsc --noEmit",
-    "db:generate": "prisma generate",
-    "db:push": "prisma db push"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@hookform/resolvers": "^5.2.2",
-    "@prisma/client": "^5.22.0",
-    "@radix-ui/react-avatar": "^1.1.11",
-    "@radix-ui/react-label": "^2.1.8",
-    "@radix-ui/react-separator": "^1.1.8",
     "@radix-ui/react-slot": "^1.2.4",
-    "@radix-ui/react-switch": "^1.2.6",
-    "@radix-ui/react-tabs": "^1.1.13",
-    "arctic": "^3.7.0",
-    "argon2": "^0.44.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.38.0",
-    "jose": "^6.2.2",
     "lucide-react": "^1.9.0",
     "next": "^16.2.4",
     "next-themes": "^0.4.6",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-hook-form": "^7.73.1",
-    "recharts": "^3.8.1",
-    "tailwind-merge": "^3.5.0",
-    "uuid": "^14.0.0",
-    "zod": "^4.3.6"
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -46,7 +29,6 @@
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.2.4",
     "postcss": "^8.5.10",
-    "prisma": "^5.22.0",
     "tailwindcss": "^3.4.14",
     "typescript": "^5"
   }

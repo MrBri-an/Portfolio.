@@ -14,7 +14,7 @@ const points = [
   {
     icon: Code2,
     title: "Full-stack product execution",
-    text: "I can move from interface design to APIs, authentication, database structure, dashboards, and deployable web experiences.",
+    text: "I can move from interface design to API integration, data structure, dashboards, and deployable web experiences.",
   },
   {
     icon: Workflow,

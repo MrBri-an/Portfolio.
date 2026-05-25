@@ -66,7 +66,7 @@ export function ProjectMockup({ variant, compact = false, className, visual }: P
             <p className="mt-2 font-[var(--font-jakarta)] text-2xl font-semibold">Build. Test. Iterate.</p>
           </div>
           <div className="mt-4 grid gap-3">
-            {["Onboarding", "Auth flow", "User dashboard"].map((item) => (
+            {["Onboarding", "Profile flow", "User dashboard"].map((item) => (
               <div key={item} className="flex items-center gap-3 rounded-2xl border border-border bg-card p-3">
                 <span className={cn("h-2.5 w-2.5 rounded-full", style.accent)} />
                 <span className="text-xs font-medium">{item}</span>

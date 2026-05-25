@@ -12,7 +12,7 @@ const items = [
   {
     icon: LockKeyhole,
     title: "Security and reliability awareness",
-    text: "I think about authentication, data handling, validation, permissions, and maintainability before they become expensive problems.",
+    text: "I think about data handling, validation, permissions, performance, and maintainability before they become expensive problems.",
   },
   {
     icon: Gauge,
